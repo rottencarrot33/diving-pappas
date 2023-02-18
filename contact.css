@@ -1,0 +1,147 @@
+
+header{
+    width: 100vw;
+    height: 50vh;
+    background-position: bottom;
+    background-size: cover;
+    background-image: url(images/underboat.jpg);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+header h1{
+    animation: 1.8s slideInFromBottom;
+}
+
+.header-content h1{
+    margin-bottom: 80px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+
+@media(min-width:992px){
+    .info-main h2{
+        margin-bottom: 40px;
+    }
+    .inner-main{
+        max-width: 400px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .info-main h2{
+        margin-bottom: 80px;
+    }
+    .info-inner{
+        line-height: 33.6px;
+    }
+}
+
+@media(max-width:767px){
+    .info-main{
+        width: 100%;
+    }
+    .info-inner{
+        margin-bottom: 80px;
+    }
+    
+}
+
+.info-main{
+    margin: 80px auto auto;
+    text-align: center;
+    line-height: 34px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    
+}
+
+.info-main h2{
+    font-size: 2rem;
+}
+
+.info-inner{
+    margin-top: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: solid;
+}
+
+.info-main img{
+    max-width: 80%;
+}
+
+
+.cont-form-main{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-form-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    border: solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .btn{
+    padding: 9px 16px;
+    background: #9CFF2E;
+    border-radius: 33px;
+    color: #333;
+    font-size: 1.2rem;
+    transition: background-color 0.7s, color 0.2s;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.btn:hover{
+    background-color: #43f2d5;
+    color: #333;
+}
+
+.btn:active{
+    opacity: 0.8;
+    background-color: #9CFF2E;
+}
+
+
+.map{
+    filter: grayscale(10%) invert(94%) contrast(93%);
+    margin: 30px auto 80px;
+}
+  
