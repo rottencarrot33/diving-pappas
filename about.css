@@ -103,3 +103,48 @@ header h1{
     transform: translateX(0);
     opacity: 1;
 }
+
+@media (min-width:768px) {
+    .about-img {
+        animation: 1.8s slideInFromRight;
+    }
+
+    .about-top {
+        animation: 1.8s slideInFromLeft;
+    }
+
+    .about-bot {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 1.8s all ease;
+    }
+
+    .about-bot.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width:767px) {
+
+    .about-img,
+    .about-bot {
+        transform: translateY(10%);
+        opacity: 0;
+        transition: 1.2s all ease;
+    }
+
+    .about-img.active,
+    .abiut-bot.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .abiut-bot {
+        margin-top: 60px;
+    }
+
+    .about-top{
+        animation: 1.2s slideInFromBottom;
+    }
+}

@@ -1,4 +1,4 @@
-header{
+header {
     width: 100vw;
     height: 50vh;
     background-position: bottom;
@@ -11,7 +11,7 @@ header{
     background-position: 50% 20%;
 }
 
-.header-content h1{
+.header-content h1 {
     margin-bottom: 80px;
     text-align: center;
     color: #f5f5f5;
@@ -22,102 +22,104 @@ header{
 
 /* Main section */
 
-@media (min-width:1001px){
-    .discover-img img{
+@media (min-width:1001px) {
+    .discover-img img {
         margin-top: 60px;
         margin-left: 120px;
     }
 }
 
-@media (min-width:992px) and (max-width:1100px){
-    .discover-img img{
+@media (min-width:992px) and (max-width:1100px) {
+    .discover-img img {
         margin-top: 60px;
         margin-left: 70px;
     }
 }
 
-@media (min-width:768px) and (max-width:991px){
-    .discover-img img{
+@media (min-width:768px) and (max-width:991px) {
+    .discover-img img {
         margin-top: 60px;
         margin-left: 10px;
     }
 }
 
-@media (min-width:510px) and (max-width:767px){
-    .discover-img{
+@media (min-width:510px) and (max-width:767px) {
+    .discover-img {
         margin-top: 60px;
         margin-left: 30px;
     }
 }
 
-@media (min-width:432px) and (max-width:509px){
-    .discover-img{
+@media (min-width:432px) and (max-width:509px) {
+    .discover-img {
         margin-top: 40px;
         margin-left: 30px;
     }
 }
 
-@media (max-width:431px){
-    .discover-img img{
+@media (max-width:431px) {
+    .discover-img img {
         width: 320px;
     }
 }
 
-@media (min-width:432px){
-    .discover-img img{
+@media (min-width:432px) {
+    .discover-img img {
         width: 410px;
     }
 }
 
-@media (max-width:576px){
-    .discover-text{
+@media (max-width:576px) {
+    .discover-text {
         padding-left: 16px;
         padding-right: 16px;
     }
 }
 
-#main-section{
+#main-section {
     margin-bottom: 60px;
     margin-top: 80px;
 }
 
-.discover-text .discover-p{
+.discover-text .discover-p {
     margin-top: 32px;
 }
 
-#main-section h2{
+#main-section h2 {
     text-align: center;
 }
 
 /* Animations */
 
-header h1{
+header h1 {
     animation: 1.8s slideInFromBottom;
 }
 
-.discover-text{
-    animation: 1.8s slideInFromLeft;
-}
 
-@media (min-width:768px){
-    .discover-img{
+
+@media (min-width:768px) {
+    .discover-img {
         animation: 1.8s slideInFromRight;
     }
+
+    .discover-text {
+        animation: 1.8s slideInFromLeft;
+    }
 }
 
-@media (max-width:767px){
-    .discover-img{
-        transform: translateX(100%);
+@media (max-width:767px) {
+    .discover-img {
+        transform: translateY(10%);
         opacity: 0;
-        transition: 1.8s all ease;  
+        transition: 1.8s all ease;
     }
-    .discover-img.active{
+
+    .discover-img.active {
         transform: translateX(0);
-    opacity: 1;
+        opacity: 1;
+    }
+
+    .discover-text {
+        animation: 1.2s slideInFromBottom;
     }
 }
-
-
-
-
-

@@ -405,38 +405,64 @@ header{
 
 /* Animations */
 
-.about-img{
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: 1.8s all ease;
-}
+@media(max-width:767px) {
 
-.about-img.active,
-.about-text.active,
-.diving-greece .diving-text.active,
-.testimonials .card.active,
-header h1,
-header h2{
-    transform: translateX(0);
-    opacity: 1;
-}
+    .about-img,
+    .about-text,
+    .diving-text,
+    .testimonials .card{
+      transform: translateY(10%);
+      opacity: 0;
+      transition: 1.2s all ease;
+    }
+  
+    .about-img.active,
+    .about-text.active,
+    .diving-text.active,
+    .testimonials .card.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  
+    .card4{
+      animation: 1.2s slideInFromBottom;
+    }
+  }
 
-.about-text{
-    transform: translateX(100%);
-    opacity: 0;
-    transition: 1.8s all ease;
-}
 
-.diving-greece .diving-text{
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: 1.8s all ease;
-}
-
-.testimonials .card{
-    transform: translateY(30%);
-    opacity: 0;
-    transition: 1.8s all ease;
+@media (min-width:768px){
+    .about-img{
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 1.8s all ease;
+    }
+    
+    .about-img.active,
+    .about-text.active,
+    .diving-greece .diving-text.active,
+    .testimonials .card.active
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+    .about-text{
+        transform: translateX(100%);
+        opacity: 0;
+        transition: 1.8s all ease;
+    }
+    
+    .diving-greece .diving-text{
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 1.8s all ease;
+    }
+    
+    .testimonials .card{
+        transform: translateY(30%);
+        opacity: 0;
+        transition: 1.8s all ease;
+    }
 }
 
 header h2{
