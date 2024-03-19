@@ -2,166 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <link rel="stylesheet" href="utilities.css">
-    <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="utilities.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
 
 
 
-    <!-- Navbar -->
+  <!-- Navbar -->
 
-    <nav class="navbar">
-        <a href="index.html"><img src="images/nav-img-nobg2.png" alt=""></a>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <div class="dropdown">
-                    <button class="dropbtn">Courses
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="discover-scuba-diving.html">Discover Scuba Diving</a>
-                        <a href="open-dive.html">Open Water Diver Course</a>
-                        <a href="ssi-advance.html">SSI Advance Open Water Course</a>
-                        <a href="rescue-diving.html">Rescue Diver Course</a>
-                        <a href="dive-master.html">Dive Master Course</a>
-                        <a href="scuba.html">Scuba Diving</a>
-                        <a href="snorkeling.html">Snorkeling</a>
-                    </div>
-                </div>
-
-            </ul>
+  <nav class="navbar">
+    <a href="index.html"><img src="images/nav-img-nobg2.png" alt=""></a>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Courses
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="discover-scuba-diving.html">Discover Scuba Diving</a>
+            <a href="open-dive.html">Open Water Diver Course</a>
+            <a href="ssi-advance.html">SSI Advance Open Water Course</a>
+            <a href="rescue-diving.html">Rescue Diver Course</a>
+            <a href="dive-master.html">Dive Master Course</a>
+            <a href="scuba.html">Scuba Diving</a>
+            <a href="snorkeling.html">Snorkeling</a>
+          </div>
         </div>
-    </nav>
+
+      </ul>
+    </div>
+  </nav>
 
 
-    <!-- Header -->
+  <!-- Header -->
 
-    <header>
-        <div class="header-content">
-            <h1>Contact</h1>
+  <header>
+    <div class="header-content">
+      <h1>Contact</h1>
+    </div>
+  </header>
+
+
+
+
+  <!-- Contact form -->
+
+  <section class="cont-form">
+
+    <div class="container">
+      <div class="row">
+
+        <div id="contact" class="cont-form-main col-md-6">
+          <div class="contact-form-wrapper">
+            <h2>Send us your message</h2>
+            <form action="form.php" method="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              <button class="btn" type="submit">Send</button>
+            </form>
+          </div>
         </div>
-    </header>
+
+        <div class="g-recaptcha" data-sitekey="6LfDK4YpAAAAAAEiOSMhWs1fmnARuE5kyjHK51F0"></div>
 
 
-
-
-    <!-- Contact form -->
-
-    <section class="cont-form">
-
-        <div class="container">
-            <div class="row">
-
-                <div id="contact" class="cont-form-main col-md-6">
-                    <div class="contact-form-wrapper">
-                        <h2>Send us your message</h2>
-                        <form action="form.php" method="POST">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" required></textarea>
-                            <button class="btn" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="address-info col-md-6">
-                    <div class="info-main">
-                        <h2>Information</h2>
-                        <div class="info-inner">
-                            <p>
-                                <i style="padding-right: 10px;" class="fa-solid fa-thumbtack"></i>Ermones, Corfu
-                            </p>
-                            <p>
-                                <i style="padding-right: 10px;" class="fa-sharp fa-regular fa-envelope"></i><a
-                                    href="mailto:info@prosopikosiatros.com">info@divingincorfu.com</a>
-                            </p>
-                            <p>
-                                <i style="padding-right: 10px;" class="fab fa-whatsapp"></i><a
-                                    href="tel:00306931048599">+30 693 104 8599</a>
-                            </p>
-                            WhatsApp QRcode <br>
-                            <img src="images/WhatsApp.jpg" alt="whatsapp qrcode">
-                        </div>
-
-                    </div>
-                </div>
+        <div class="address-info col-md-6">
+          <div class="info-main">
+            <h2>Information</h2>
+            <div class="info-inner">
+              <p>
+                <i style="padding-right: 10px;" class="fa-solid fa-thumbtack"></i>Ermones, Corfu
+              </p>
+              <p>
+                <i style="padding-right: 10px;" class="fa-sharp fa-regular fa-envelope"></i><a
+                  href="mailto:info@prosopikosiatros.com">info@divingincorfu.com</a>
+              </p>
+              <p>
+                <i style="padding-right: 10px;" class="fab fa-whatsapp"></i><a href="tel:00306931048599">+30 693 104
+                  8599</a>
+              </p>
+              WhatsApp QRcode <br>
+              <img src="images/WhatsApp.jpg" alt="whatsapp qrcode">
             </div>
+
+          </div>
         </div>
+      </div>
+    </div>
 
-    </section>
-
-
-
-    <section class="google-map">
-
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1881.1692420411348!2d19.78328067172979!3d39.61208155606957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b59ca1d7a4885%3A0x65b42a62f5936728!2sPoseidon%20Diving%20Center%20Ermones!5e0!3m2!1sen!2sgr!4v1676503663766!5m2!1sen!2sgr"
-                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-    </section>
+  </section>
 
 
 
+  <section class="google-map">
 
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1881.1692420411348!2d19.78328067172979!3d39.61208155606957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b59ca1d7a4885%3A0x65b42a62f5936728!2sPoseidon%20Diving%20Center%20Ermones!5e0!3m2!1sen!2sgr!4v1676503663766!5m2!1sen!2sgr"
+        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-
-
-
-    <!-- Footer -->
-
-    <footer>
-        <div class="container">
-            <p>Copyright © 2023 <span class="company-name">Poseidon Diving School</span></p>
-            <p><i style="padding-right: 10px;" class="fa-solid fa-location-dot"></i>Ermones Corfu, Greece</p>
-            <p><i style="padding-right: 10px;" class="fa-solid fa-envelope"></i>info@divingincorfu.com </a></p>
-            <p><i style="padding-right: 10px;" class="fab fa-whatsapp"></i>Whatsapp: +30 693 104 8599 </p>
-            <p class="web-dev">Designed by <span class="web-dev-name">netorbyte</span> <span class="divider">|</span> <a
-                    href="mailto:webdev@yourcompany.com" class="web-dev-email">dev@netorbyte.com</a></p>
-        </div>
-    </footer>
+  </section>
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
-    <script src="animations.js"></script>
+
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="container">
+      <p>Copyright © 2023 <span class="company-name">Poseidon Diving School</span></p>
+      <p><i style="padding-right: 10px;" class="fa-solid fa-location-dot"></i>Ermones Corfu, Greece</p>
+      <p><i style="padding-right: 10px;" class="fa-solid fa-envelope"></i>info@divingincorfu.com </a></p>
+      <p><i style="padding-right: 10px;" class="fab fa-whatsapp"></i>Whatsapp: +30 693 104 8599 </p>
+      <p class="web-dev">Designed by <span class="web-dev-name">netorbyte</span> <span class="divider">|</span> <a
+          href="mailto:webdev@yourcompany.com" class="web-dev-email">dev@netorbyte.com</a></p>
+    </div>
+  </footer>
+
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="animations.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 
 </body>
