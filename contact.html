@@ -75,50 +75,46 @@
     <!-- Contact form -->
 
     <section class="cont-form">
+    <div class="container">
+        <div class="row">
+            <div id="contact" class="cont-form-main col-md-6">
+                <div class="contact-form-wrapper">
+                    <h2>Send us your message</h2>
+                    <form action="form.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
 
-        <div class="container">
-            <div class="row">
-
-                <div id="contact" class="cont-form-main col-md-6">
-                    <div class="contact-form-wrapper">
-                        <h2>Send us your message</h2>
-                        <form action="form.php" method="POST">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" required></textarea>
-                            <button class="btn" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="address-info col-md-6">
-                    <div class="info-main">
-                        <h2>Information</h2>
-                        <div class="info-inner">
-                            <p>
-                                <i style="padding-right: 10px;" class="fa-solid fa-thumbtack"></i>Ermones, Corfu
-                            </p>
-                            <p>
-                                <i style="padding-right: 10px;" class="fa-sharp fa-regular fa-envelope"></i><a
-                                    href="mailto:info@prosopikosiatros.com">info@divingincorfu.com</a>
-                            </p>
-                            <p>
-                                <i style="padding-right: 10px;" class="fab fa-whatsapp"></i><a
-                                    href="tel:00306931048599">+30 693 104 8599</a>
-                            </p>
-                            WhatsApp QRcode <br>
-                            <img src="images/WhatsApp.jpg" alt="whatsapp qrcode">
+                        <!-- Honeypot field -->
+                        <div style="position: absolute; left: -9999px;">
+                            <label for="honeypot">Leave this field empty:</label>
+                            <input type="text" id="honeypot" name="honeypot">
                         </div>
 
+                        <button class="btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="address-info col-md-6">
+                <div class="info-main">
+                    <h2>Information</h2>
+                    <div class="info-inner">
+                        <p><i style="padding-right: 10px;" class="fa-solid fa-thumbtack"></i>Ermones, Corfu</p>
+                        <p><i style="padding-right: 10px;" class="fa-sharp fa-regular fa-envelope"></i><a href="mailto:info@prosopikosiatros.com">info@divingincorfu.com</a></p>
+                        <p><i style="padding-right: 10px;" class="fab fa-whatsapp"></i><a href="tel:00306931048599">+30 693 104 8599</a></p>
+                        WhatsApp QRcode <br>
+                        <img src="images/WhatsApp.jpg" alt="whatsapp qrcode">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-    </section>
 
 
 
