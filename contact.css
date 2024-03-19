@@ -139,10 +139,6 @@ header h1{
     background-color: #9CFF2E;
 }
 
-.g-recaptcha{
-    margin-top: 40px;
-}
-
 
 .map{
     filter: grayscale(10%) invert(94%) contrast(93%);
