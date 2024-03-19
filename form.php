@@ -1,6 +1,11 @@
 <?php
-  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST['full-name'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (!empty($_POST['honeypot'])) {
+        echo "Spam submission detected.";
+        exit;
+    }
+
+    $name = $_POST['name'];
     $email = $_POST['email'];
     $subject = $_POST['subject'];
     $message = $_POST['message'];
@@ -10,9 +15,9 @@
     $headers .= "Reply-To: $email\r\n";
 
     if (mail($to, $subject, $message, $headers)) {
-      header("Location: thankyou.html");
+        header("Location: thankyou.html");
     } else {
-      echo "There was a problem sending the message.";
+        echo "There was a problem sending the message.";
     }
-  }
+}
 ?>
