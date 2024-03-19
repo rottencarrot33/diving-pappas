@@ -17,7 +17,7 @@
   }
 
     
-$secretKey = "6LfDK4YpAAAAAAEiOSMhWs1fmnARuE5kyjHK51F0";
+$secretKey = "6Lc5OZ4pAAAAADmnYUdrUQWgTbdca4V1PODhCCv8";
 $responseKey = $_POST['g-recaptcha-response'];
 $userIP = $_SERVER['REMOTE_ADDR'];
 
