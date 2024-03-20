@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $to = "info@divingincorfu.com";
+    $to = "info@scubacorfu.com";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
 
