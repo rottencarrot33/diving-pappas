@@ -144,4 +144,8 @@ header h1{
     filter: grayscale(10%) invert(94%) contrast(93%);
     margin: 30px auto 80px;
 }
+
+#honeypotWrapper{
+    display: none;
+}
   
